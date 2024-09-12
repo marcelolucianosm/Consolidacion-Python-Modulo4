@@ -69,10 +69,12 @@ lista_encabezados = obtenerListaEncabezados(automovilCarga1.__dict__.keys())
 datos_imprimir = datos_de_diccionario(automovilCarga1.__dict__,lista_encabezados)
 
 guardar("vehiculosCarga.csv",datos_imprimir)
+
+print("\n\n")
 print ('#########################################################################################')
 print (' >>>> GENERACION DE ARCHIVO EN FORMATO CSV PARA VEHICULOS DE CARGA <<<<')
 print ('#########################################################################################')
-
+print("\n\n")
 vehiculosCarga = recuperar("vehiculosCarga.csv")
 ##################################################################################################
 print (' LISTADO VEHICULOS DE CARGA <<LEIDOS DESDE FORMATO CSV>>')
@@ -88,9 +90,11 @@ lista_encabezados = obtenerListaEncabezados(automovilPasajeros1.__dict__.keys())
 datos_imprimir = datos_de_diccionario(automovilPasajeros1.__dict__,lista_encabezados)
 
 guardar("vehiculosPasajeros.csv",datos_imprimir)
+print("\n\n")
 print ('#########################################################################################')
 print (' >>>> GENERACION DE ARCHIVO EN FORMATO CSV PARA VEHICULOS DE PASAJEROS <<<<')
 print ('#########################################################################################')
+print("\n\n")
 
 vehiculosPasajeros = recuperar("vehiculosPasajeros.csv")
 ##################################################################################################
@@ -99,8 +103,6 @@ print (' LISTADO VEHICULOS DE PASAJEROS <<LEIDOS DESDE FORMATO CSV>>')
 for automovilpasajeros in vehiculosPasajeros:
     imprimir('vehiculosPasajeros ',automovilpasajeros)
 
-
-    
 ##################################################################################################
 guardar_encabezado("motocicletas.csv",obtenerEncabezados(motocicleta1.__dict__.keys()))
 
@@ -109,9 +111,12 @@ lista_encabezados = obtenerListaEncabezados(motocicleta1.__dict__.keys())
 datos_imprimir = datos_de_diccionario(motocicleta1.__dict__,lista_encabezados)
 
 guardar("motocicletas.csv",datos_imprimir)
+print("\n\n")
 print ('#########################################################################################')
 print (' >>>> GENERACION DE ARCHIVO EN FORMATO CSV PARA MOTOCICLETAS <<<<')
 print ('#########################################################################################')
+print("\n\n")
+
 
 
 motocicletas = recuperar("motocicletas.csv")
@@ -129,9 +134,11 @@ guardar_encabezado("bicicletas.csv",obtenerEncabezados(bicicleta1.__dict__.keys(
 datos_imprimir = datos_de_diccionario(bicicleta1.__dict__,lista_encabezados)
 
 guardar("bicicletas.csv",datos_imprimir)
+print("\n\n")
 print ('#########################################################################################')
 print (' >>>> GENERACION DE ARCHIVO EN FORMATO CSV PARA BICICLETAS <<<<')
 print ('#########################################################################################')
+print("\n\n")
 
 bicicletas = recuperar("bicicletas.csv")
 ##################################################################################################
